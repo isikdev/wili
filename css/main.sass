@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+$black: #081420
+$gray: #AAAFBE
+$gray2: #F2F3F5
+$gray3: #B9B9B9
+$pink: #F42B55
+$yellow: #FFDC61
+*
+    margin: 0px
+    padding: 0px
+    box-sizing: border-box
+html
+    scroll-behavior: smooth
+body
+    font-family: 'Montserrat', sans-serif
+    transition: .5s
+    scroll-behavior: smooth
+    position: relative
+    display: flex
+    flex-direction: column
+    height: 100%
+    background-color: #F2F3F5
+section
+    margin: 70px 0px
+.container
+    max-width: 1240px
+    width: 100%
+    padding: 0px 40px
+    margin: 0px auto
+.btn
+    display: none
+    background: transparent
+    border: 0px none
+.pre__navbar
+    background-color: $black
+    padding: 8px 0px
+    .pre__nav-content
+        display: flex
+        justify-content: space-between
+        align-items: center
+        align-self: center
+        .pre__nav-item
+            a
+                text-decoration: none
+                font-weight: 600
+                color: $gray
+            img
+                margin-right: 9px
+            nav
+                ul
+                    display: flex
+                    li
+                        list-style: none
+                        margin-left: 36px
+.logo
+    margin-left: 10px
+    font-size: 24px
+    font-weight: 900
+    line-height: 20px
+    letter-spacing: 0.1em
+.navbar
+    padding: 10px 0px
+    background: #fff
+    .nav__content
+        display: flex
+        justify-content: space-between
+        align-items: center
+        align-self: center
+        .nav__link-item
+            a
+                text-decoration: none
+                font-weight: 600
+                color: #000
+        .nav__brand
+            display: flex
+            align-items: center
+        form
+            background-color: $gray2
+            display: flex
+            align-items: center
+            padding: 12px 10px
+            border-radius: 15px
+            .nav__search
+                display: flex
+                align-items: center
+                input
+                    padding: 10px 10px
+                    background-color: transparent
+                    border: 0px none
+                    outline: 0px none
+                    margin-left: 20px
+                    font-weight: 500
+                button
+                    background: transparent
+                    outline: none
+                    border: 0px none
+                    cursor: pointer
+        .nav__catalog
+            position: relative
+            display: flex
+        .nav__catalog-obvertka
+            display: none
+            .nav__catalog-menu
+                display: flex
+                justify-content: space-between
+                background-color: #fff
+                border-radius: 5px
+                padding: 10px 15px
+                position: absolute
+                top: 30px
+                z-index: 90000
+                .catalog__item
+                    text-align: center
+                    text-transform: uppercase
+                    font-size: 16px
+                    margin-left: 30px
+        .nav__catalog-obvertka-active
+            display: block
+        .catalog__btn
+            font-weight: 600
+            background-color: $pink
+            padding: 12px 24px
+            border-radius: 15px
+            display: flex
+            align-items: center
+            color: #fff !important
+            cursor: pointer
+            &:hover
+                .nav__catalog-obvertka
+                    display: block
+        .user__profile
+            display: flex
+            justify-content: space-between
+            align-items: center
+            align-self: center
+            a
+                margin-left: 30px
+        .cart
+            a
+                margin-left: 10px
+.banner
+    .banner__content
+        img
+            max-width: 100%
+.choise
+    .choise__content
+        box-shadow: 0px 0px 16px 0px #777C8B4D
+        padding: 20px 30px
+        border-radius: 16px
+        display: flex
+        justify-content: space-between
+        .choise__shine
+            height: auto
+            .choise__tabs
+                display: flex
+                .choise__tab-title
+                    margin-left: 40px
+                    button
+                        background: transparent
+                        border: 0px
+                        outline: none
+                        font-weight: 800
+                        font-size: 18px
+                        text-transform: uppercase
+                        cursor: pointer
+                .choise__tab-title-active
+                    button
+                        border-bottom: 3px solid $pink
+            .choise__option
+                display: flex
+                margin-top: 27px
+                .choise__option-into
+                    display: flex
+                    align-items: center
+                    align-self: center
+                    margin-left: 40px
+                    background: $gray2
+                    padding: 12px 10px
+                    border-radius: 40px
+                    button
+                        background: transparent
+                        border: none
+                        outline: none
+                        border-radius: 20px
+                        display: flex
+                        margin-left: 20px
+                        cursor: pointer
+                        font-weight: 700
+                        padding: 15px 10px
+                        img
+                            margin-right: 10px
+                        &:nth-child(1)
+                            margin-left: 0px
+                        &:hover
+                            background: #fff
+                            transition: .3s
+                    .chose__btn-active
+                        background: #fff
+            .select__option
+                display: flex
+                margin-top: 30px
+                .select__option-into
+                    display: flex
+                    box-shadow: 0px 0px 8px 0px rgb(119 124 139 / 35%)
+                    padding: 12px 27px
+                    border-radius: 20px
+                    margin-left: 40px
+                    background-color: $gray2
+                    &:focus
+                        background-color: #fff
+                        select
+                            background-color: #fff
+                            option
+                                background-color: #fff
+                    &:hover
+                        background-color: #fff
+                        select
+                            background-color: #fff
+                            option
+                                background-color: #fff
+                    &:active
+                        background-color: #fff
+                        select
+                            background-color: #fff
+                            option
+                                background-color: #fff
+                    .into__img
+                        height: 100%
+                    .into__info
+                        margin-left: 10px
+                        p
+                            color: $gray
+                            font-weight: 600
+                        select
+                            border: none
+                            outline: none
+                            border: transparent
+                            width: 100%
+                            background-color: $gray2
+                            &:active
+                                outline: none
+                                border: none
+                                outline: none
+                                border: transparent
+                            &:focus
+                                outline: none
+                                border: none
+                                outline: none
+                                border: transparent
+                            option
+                                border: none
+                                outline: none
+                                border: transparent
+        .choise__search
+            flex: 0 1 auto
+            display: flex
+            align-items: center
+            button
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
+                height: 70%
+                padding: 0px 20px
+                font-weight: 700
+                border-radius: 20px
+                background: $pink
+                border: 0px none
+                outline: none
+                color: #fff
+                cursor: pointer
+.xits
+    .xit__content
+        .xit__cards
+            display: flex
+            .product__card
+                margin: 0px 10px
+                background-color: #fff
+                box-shadow: 0px 0px 29px 0px #777c8ba7
+                padding: 20px 20px
+                border-radius: 20px
+                .product__skidka
+                    display: flex
+                    justify-content: space-between
+                    p
+                        background: $yellow
+                        padding: 5px 10px
+                        border-radius: 20px
+                        font-weight: 600
+                    button
+                        background: transparent
+                        border: none
+                        outline: none
+                        cursor: pointer
+                .product__img
+                    margin: 20px auto
+                    justify-content: center
+                    display: flex
+                .product__art
+                    p
+                        color: $gray
+                .product__title
+                    margin: 10px 0px
+                .product__buys
+                    display: flex
+                    justify-content: space-between
+                    .product__price
+                        p
+                            color: $gray3
+                            text-decoration: line-through
+                            font-weight: 700
+                    .product__buy
+                        button
+                            display: flex
+                            flex: 0 1 auto
+                            padding: 10px 15px
+                            border-radius: 10px
+                            background: $pink
+                            color: #fff
+                            border: none
+                            outline: none
+                            cursor: pointer
+.action
+    .action__content
+        .action__cards
+            display: flex
+            justify-content: space-between
+            max-width: 100%
+            margin-top: 24px
+.infos
+    .info__content
+        .info__cards
+            margin-top: 30px
+            display: flex
+            background-color: #fff
+            border-radius: 20px
+            .info__intro
+                padding: 40px 40px
+                p
+                    margin: 30px 0px
+                a
+                    color: $pink
+                    text-decoration: none
+                    font-weight: 600
+.shop
+    .shop__content
+        background-color: #fff
+        padding: 12px 20px
+        border-radius: 20px
+        .shop__brand
+            display: flex
+            align-items: center
+            margin: 30px 0px
+        .shop__subtitle
+            margin: 20px 0px
+            p
+                margin: 20px 0px
+.partners
+    .partner__content
+        .partner__img
+            display: flex
+            justify-content: space-between
+            align-items: center
+footer
+    background-color: $black
+    color: #fff
+    margin-top: 30px
+    .footer__content
+        display: flex
+        justify-content: space-between
+        padding: 50px 0px
+        .footer__links
+            display: grid
+            grid-template-columns: 1fr 1fr 1fr
+            gap: 50px
+            .footer__link-block
+                h3
+                    color: $gray
+                ul
+                    li
+                        list-style: none
+                        margin: 20px 0px
+                        a
+                            text-decoration: none
+                            color: $gray
+        .footer__tel
+            a
+                text-decoration: none
+                color: #fff
+                font-weight: 500
+                display: flex
+                align-items: center
+                align-self: center
+                img
+                    margin-right: 12px
+            .footer__tel-promo
+                margin: 20px 0px
+                form
+                    margin-top: 20px
+                    input
+                        background: #212B36
+                        border: 2px solid #fff
+                        border-radius: 7px
+                        padding: 8px 20px
+                        color: #fff
+                    button
+                        padding: 11px 14px
+                        background: $pink
+                        border-radius: 7px
+                        color: #fff
+                        cursor: pointer
+                    .form__chekbox
+                        display: flex
+                        align-items: center
+                        align-self: center
+                        margin-top: 20px
+                        p
+                            color: $gray
+                            font-size: 12px
+                            margin-left: 10px
+    .footer__sc
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin: 30px 0px
+        .footer__info
+            p
+                color: $gray
+        .footer__social
+            display: flex
+            align-items: center
+            align-self: center
+            a
+                margin-left: 15px
+@media only screen and (max-width: 730px)
+    .container
+        width: 100%
+        padding: 0px 10px
+        margin: 0px auto
+    .btn,
+    .close
+        display: block
+        img
+            max-width: 60%
+    .menu
+        min-height: 100vh
+        width: 60%
+        position: fixed
+        top: -120%
+        left: 0
+        z-index: 2000
+        background-color: #7BC3E8
+        padding: 15px 10px
+        transition: .5s
+        display: block
+        .close
+            position: absolute
+            right: 40px
+            top: 20px
+            background: transparent
+            border: 0px none
+    .menu-active
+        top: 0
